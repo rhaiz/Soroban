@@ -1,17 +1,24 @@
 import React, { useState } from 'react';
+import Select from 'react-select';
 import './App.css';
 import Keta from './components/Keta/Keta';
 import DecimalTable from './components/DecimalTable/DecimalTable'
 
 function App() {
-  const [elementsLength, setElementsLength] = useState(9);
-  const [numberTds, setNumberTds] = useState(9);
+  const [elementsLength, setElementsLength] = useState(7);
+  const options = [
+    { value: '7', label: '7' },
+    { value: '9', label: '9' },
+    { value: '11', label: '11' },
+    { value: '13', label: '13' },
+    { value: '15', label: '15' },
+    { value: '17', label: '17' }
+  ]
 
   const handleDropdownChange = (event) => {
-    const newValue = parseInt(event.target.value);
-    if (newValue >= 4 && newValue <= 17) {
-      setElementsLength(newValue);
-      setNumberTds(newValue);
+    const newValue = parseInt(event.value,10);
+  if (newValue >= 4 && newValue <= 17) {
+    setElementsLength(newValue);
     }
   };
   return (
@@ -21,21 +28,18 @@ function App() {
           Soroban
         </p>
       </header>
-      <body>
-      <select value={elementsLength} onChange={handleDropdownChange}>
-          {Array.from({ length: 14 }, (_, index) => (
-            <option key={index + 4} value={index + 4}>
-              {index + 4}
-            </option>
-          ))}
-        </select>
-        <DecimalTable numberTds={numberTds} />
+        <Select 
+          options={options}
+          defaultValue={options[0]}
+          onChange={handleDropdownChange} />
+
+        <DecimalTable numberTds={elementsLength} />
+
         <div className='waku'>
           {Array.from({ length: elementsLength }, (_, index) => (
             <Keta key={index} />
           ))}
         </div>
-      </body>
     </div>
   );
 }

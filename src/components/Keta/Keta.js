@@ -42,20 +42,17 @@ import React, { useState, useEffect } from 'react';
               const tamaCount = ichidamaMargins.filter(
                 (item) => item.marginTop === "-2.5rem" && item.marginBottom === "3.5rem"
               ).length;
-        
+
               setNumberTama(tamaCount);
+
+              if (godamaMarginTop === "3.5rem" && godamaMarginBottom === "-2.5rem") {
+                setNumberTama((prevNumberTama) => prevNumberTama + 5);
+              }
             };
-        
+
             countTamas();
-        
             // ... (change listener implementation remains the same)
           }, [godamaMarginTop, godamaMarginBottom, ichidamaMargins]);
-
-          useEffect(() => {
-            if (godamaMarginTop === "3.5rem" && godamaMarginBottom === "-2.5rem") {
-              setNumberTama((prevNumberTama) => prevNumberTama + 5);
-            }
-          }, [godamaMarginTop, godamaMarginBottom]);
 
       return (
         <div className="Keta">

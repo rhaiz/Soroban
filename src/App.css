@@ -36,26 +36,27 @@
     transform: rotate(360deg);
   }
 }
-.a{
+.waku{
   margin: 3rem;
-  width: 10rem;
-  border: 1rem solid #282c34;
+  display:flex;
+  width:fit-content;
+  /*   width: 7rem; */
+  border: 0.5rem solid #282c34;
 }
 .keta{
   position: relative;
-  background-color: aqua;
+  background-color: #CDCFD6;
   width: 1rem;
-  display:grid;
-  justify-content: center;
-  align-items: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .tama {
   position: relative;
   height: 3rem;
-  margin: 0.5rem; 
-  width: 46.19px;
-  background-color: lime;
+  margin: 1rem -1rem;
+  width: 3rem;
+  background-color: #CB854B;
 }
 
 .tama:before,
@@ -67,11 +68,19 @@
 }
 
 .tama:before {
-  left: -23.09px;
-  border-right: 23.09px solid lime;
+  left: -1.5rem;
+  border-right: 1.5rem solid #CB854B;
 }
 
 .tama:after {
-  right: -23.09px;
-  border-left: 23.09px solid lime;
+  right: -1.5rem;
+  border-left: 1.5rem solid #CB854B;
+}
+
+.hari{
+  margin-left: -3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 0.5rem solid #282c34;
+  width: 6rem;
 }

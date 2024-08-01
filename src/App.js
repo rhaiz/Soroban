@@ -20,27 +20,228 @@ function App() {
         </a>
       </header>
       <body>
-      <div className='a'>
+      <div className='waku'>
         <div className="keta">
       
-        <div className="tama"
-            id="tama">
-        </div>
-        <div className="tama"
-            id="tama">
-        </div>
-        <div className="tama"
-            id="tama">
-        </div>
-        <div className="tama"
-            id="tama">
-        </div>
-        <div className="tama"
-            id="tama">
-        </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
               
         </div>
+        <div className="keta">
+      
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+              
         </div>
+        <div className="keta">
+      
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+              
+        </div>
+        <div className="keta">
+      
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+              
+        </div>
+        <div className="keta">
+      
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+              
+        </div>
+        <div className="keta">
+      
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+              
+        </div>
+        <div className="keta">
+      
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+              
+        </div>
+        <div className="keta">
+      
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+              
+        </div>
+        <div className="keta">
+      
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+              
+        </div>
+        <div className="keta">
+      
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+              
+        </div>
+        <div className="keta">
+      
+          <div className="tama"
+              id="tama">
+          </div>
+          <hr className="hari"></hr>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+          <div className="tama"
+              id="tama">
+          </div>
+              
+        </div>
+      </div>
       </body>
     </div>
   );

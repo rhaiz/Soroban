@@ -40,6 +40,7 @@ function App() {
             <Keta key={index} />
           ))}
         </div>
+        <footer><a href="https://www.flaticon.com/free-icons/soroban" title="soroban icons">Soroban icons created by Vectors Tank - Flaticon</a></footer>
     </div>
   );
 }

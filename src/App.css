@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+.a{
+  margin: 3rem;
+  width: 10rem;
+  border: 1rem solid #282c34;
+}
+.keta{
+  position: relative;
+  background-color: aqua;
+  width: 1rem;
+  display:grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.tama {
+  position: relative;
+  height: 3rem;
+  margin: 0.5rem; 
+  width: 46.19px;
+  background-color: lime;
+}
+
+.tama:before,
+.tama:after {
+  content: "";
+  position: absolute;
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+}
+
+.tama:before {
+  left: -23.09px;
+  border-right: 23.09px solid lime;
+}
+
+.tama:after {
+  right: -23.09px;
+  border-left: 23.09px solid lime;
+}

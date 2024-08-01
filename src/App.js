@@ -2,6 +2,7 @@ import './App.css';
 import Keta from './components/Keta/Keta';
 
 function App() {
+  const elements = Array.from({ length: 9 });
   return (
     <div className="App">
       <header className="App-header">
@@ -11,9 +12,9 @@ function App() {
       </header>
       <body>
       <div className='waku'>
-        <Keta/>
-        <Keta/>
-        <Keta/>        
+      {elements.map((_, index) => (
+        <Keta key={index} />
+        ))}
       </div>
       </body>
     </div>

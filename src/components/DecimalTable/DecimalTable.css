@@ -1,0 +1,16 @@
+
+.DecimalTable{
+    width: min-content;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    margin-bottom: -1rem;
+    
+    border: 0.1rem #000 solid;
+}
+.DecimalTable th {
+    margin-left: 3rem;
+    margin-right: 1rem;
+    padding: 1.6rem;
+    width:15rem;
+    
+}

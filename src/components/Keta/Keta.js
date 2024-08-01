@@ -69,7 +69,7 @@ import React, { useState, useEffect } from 'react';
                 </div>
             ))}
             
-        <p>{numberTama}</p>
+        <h2 style={{backgroundColor:"white", paddingTop:"1rem", paddingBottom:"1rem", marginBottom:"0rem"}}>{numberTama}</h2>
         </div>
       );
     }

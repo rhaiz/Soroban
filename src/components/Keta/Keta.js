@@ -3,10 +3,8 @@ import React, { useState } from 'react';
     function Keta() {
         const [godamaMarginTop, setGodamaMarginTop] = useState("1rem");
         const [godamaMarginBottom, setGodamaMarginBottom] = useState("1rem");
-        const [ichidamaMarginTop, setIchidamaMarginTop] = useState("1rem");
-        const [ichidamaMarginBottom, setIchidamaMarginBottom] = useState("1rem");
-        const elements = Array.from({ length: 4 });
-      
+        const [ichidamaMargins, setIchidamaMargins] = useState(Array.from({ length: 4 }, () => ({ marginTop: "1rem", marginBottom: "1rem" })));
+
         const moveTama = (index) => {
             // Se a margem atual for 1, define para o valor inicial (3 e 2, respectivamente)
             // Caso contrário, redefine para 1
@@ -21,14 +19,20 @@ import React, { useState } from 'react';
                     setGodamaMarginBottom("1rem");
                 }
             }
-            else{
-                if (ichidamaMarginTop === "1rem" && ichidamaMarginBottom === "1rem") {
-                    setIchidamaMarginTop("-2.5rem");
-                    setIchidamaMarginBottom("3.5rem");
-                } else {
-                    setIchidamaMarginTop("1rem");
-                    setIchidamaMarginBottom("1rem");
-                }
+            else {
+                setIchidamaMargins(prevState => {
+                    return prevState.map((item, idx) => {
+                        if (idx <= index) {
+                            if (item.marginTop === "1rem" && item.marginBottom === "1rem") {
+                                return { marginTop: "-2.5rem", marginBottom: "3.5rem" };
+                            } else {
+                                return { marginTop: "1rem", marginBottom: "1rem" };
+                            }
+                        } else {
+                            return item;
+                        }
+                    });
+                });
             }
         };
       return (
@@ -38,11 +42,11 @@ import React, { useState } from 'react';
               id="Tama" onClick={() => moveTama()} style={{ marginTop: godamaMarginTop, marginBottom: godamaMarginBottom }}>
               </div>
           <hr className="hari"></hr>
-          {elements.map((_, index) => (
-            <div className="Tama" id="Tama" key={index} onClick={() => moveTama(index)} style={{ marginTop: ichidamaMarginTop, marginBottom: ichidamaMarginBottom }}> 
-            {/* Content of your Tama component */}
-            </div>
-        ))}
+          {ichidamaMargins.map((item, index) => (
+                <div className="Tama" id="Tama" key={index} onClick={() => moveTama(index)} style={{ marginTop: item.marginTop, marginBottom: item.marginBottom }}>
+                    {/* Conteúdo do seu componente Tama */}
+                </div>
+            ))}
         </div>
       );
     }

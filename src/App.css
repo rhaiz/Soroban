@@ -16,12 +16,21 @@
   color: #61dafb;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 .waku{
   margin: 3rem;
   display:flex;
   width:fit-content;
-  /*   width: 7rem; */
   border: 0.5rem solid #282c34;
+  max-width: 95%;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
 
 .hari{

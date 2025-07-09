@@ -1,10 +1,7 @@
 
 .DecimalTable{
     width: min-content;
-    margin-left: 3rem;
-    margin-top: 4rem;
-    margin-bottom: -1rem;
-    
+    margin: 4rem 3rem -1rem 3rem;
     border: 0.1rem #000 solid;
 }
 .DecimalTable th {

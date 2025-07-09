@@ -10,9 +10,9 @@ function App() {
     { value: '7', label: '7' },
     { value: '9', label: '9' },
     { value: '11', label: '11' },
-    { value: '13', label: '13' },
-    { value: '15', label: '15' },
-    { value: '17', label: '17' }
+    // { value: '13', label: '13' },
+    // { value: '15', label: '15' },
+    // { value: '17', label: '17' }
   ]
 
   const handleDropdownChange = (event) => {
@@ -28,17 +28,20 @@ function App() {
           Soroban
         </p>
       </header>
+        <p>Selecione o número de colunas para o seu Soroban </p>
         <Select 
           options={options}
           defaultValue={options[0]}
           onChange={handleDropdownChange} />
 
-        <DecimalTable numberTds={elementsLength} />
+        <div className='container'>
+          <DecimalTable numberTds={elementsLength} />
 
         <div className='waku'>
           {Array.from({ length: elementsLength }, (_, index) => (
             <Keta key={index} />
           ))}
+        </div>
         </div>
         <footer><a href="https://www.flaticon.com/free-icons/soroban" title="soroban icons">Soroban icons created by Vectors Tank - Flaticon</a></footer>
     </div>
